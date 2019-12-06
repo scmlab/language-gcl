@@ -1,0 +1,94 @@
+name: 'GCL'
+scopeName: 'source.gcl'
+type: 'tree-sitter'
+parser: 'tree-sitter-gcl'
+#
+fileTypes: ['gcl']
+
+comments:
+    start: '--'
+
+folds: [
+    {
+        type: [
+            'fi'
+            'do'
+            'spec'
+        ]
+    }
+    {
+        start: {index: 0, type: '{'}
+        end: {index: -1, type: '}'}
+    }
+    {
+        start: {index: 0, type: '{!'}
+        end: {index: -1, type: '!}'}
+    }
+    {
+        start: {index: 0, type: '('}
+        end: {index: -1, type: ')'}
+    }
+]
+
+scopes:
+    'source_file': 'source.gcl'
+
+    # punctuations
+    '"="': 'punctuation.binding.gcl'
+    '":"': 'punctuation.colon.gcl'
+    '"→"': 'punctuation.arrow.gcl'
+    '"->"': 'punctuation.arrow.gcl'
+
+    '"|"': 'punctuation.definition.seperator'
+    '","': 'punctuation.definition.seperator'
+
+
+    '"?"': 'meta.delimiter.hole'
+
+    '"("': 'punctuation.definition.begin.bracket.round'
+    '")"': 'punctuation.definition.end.bracket.round'
+    '"{"': 'punctuation.definition.begin.bracket.curly'
+    '"}"': 'punctuation.definition.end.bracket.curly'
+    '"{!"': 'punctuation.definition.bold'
+    '"!}"': 'punctuation.definition.bold'
+
+    'comment': 'comment.block.gcl'
+
+    '"True"': 'constant.language.boolean.true'
+    '"False"': 'constant.language.boolean.false'
+
+    'integer': 'constant.numeric'
+    'variable': 'variable'
+    # 'constant': 'punctuation.definition.bold'
+    'constant': 'constant'
+    # 'type': 'punctuation.definition.bold'
+    'type': 'support.type.underline'
+
+    # entity — an entity refers to a larger part of the document.
+    'op_name': 'entity.name.function'
+
+    # keywords
+    'skip': 'keyword.control'
+    'abort': 'keyword.control'
+
+    '"fi"': 'keyword.control'
+    '"if"': 'keyword.control'
+    '"do"': 'keyword.control'
+    '"od"': 'keyword.control'
+
+
+    '"con"': 'storage.type.annotation'
+    '"var"': 'storage.type.annotation'
+    '"bnd"': 'storage.modifier'
+
+    # '"&&"': 'keyword.operator.predicate'
+    '"&&"': 'keyword.operator.predicate'
+    '"||"': 'keyword.operator.predicate'
+    '"~"': 'keyword.operator.predicate'
+
+    '"="': 'keyword.operator.predicate.markup.inserted'
+    '"!="': 'keyword.operator.predicate.markup.inserted'
+    '">="': 'keyword.operator.predicate.markup.inserted'
+    '"<="': 'keyword.operator.predicate.markup.inserted'
+    '">"': 'keyword.operator.predicate.markup.inserted'
+    '"<"': 'keyword.operator.predicate.markup.inserted'
