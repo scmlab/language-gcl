@@ -38,6 +38,7 @@ scopes:
     '":"': 'punctuation.colon.gcl'
     '"→"': 'punctuation.arrow.gcl'
     '"->"': 'punctuation.arrow.gcl'
+    '".."': 'punctuation.arrow.gcl'
 
     '"|"': 'punctuation.definition.seperator'
     '","': 'punctuation.definition.seperator'
@@ -65,7 +66,6 @@ scopes:
     'type': 'support.type.underline'
 
     # entity — an entity refers to a larger part of the document.
-    'op_name': 'entity.name.function'
 
     # keywords
     'skip': 'keyword.control'
@@ -80,6 +80,8 @@ scopes:
     '"con"': 'storage.type.annotation'
     '"var"': 'storage.type.annotation'
     '"bnd"': 'storage.modifier'
+    '"array"': 'storage.type.annotation'
+    '"of"': 'storage.type.annotation'
 
     # '"&&"': 'keyword.operator.predicate'
     '"&&"': 'keyword.operator.predicate'
@@ -87,7 +89,7 @@ scopes:
     '"~"': 'keyword.operator.predicate'
 
     '"="': 'keyword.operator.predicate.markup.inserted'
-    '"!="': 'keyword.operator.predicate.markup.inserted'
+    '"/="': 'keyword.operator.predicate.markup.inserted'
     '">="': 'keyword.operator.predicate.markup.inserted'
     '"<="': 'keyword.operator.predicate.markup.inserted'
     '">"': 'keyword.operator.predicate.markup.inserted'

@@ -11,7 +11,7 @@
     "url": "git+https://github.com/scmlab/language-gcl.git"
   },
   "dependencies": {
-    "tree-sitter-gcl": "scmlab/tree-sitter-gcl#88f52f"
+    "tree-sitter-gcl": "scmlab/tree-sitter-gcl#4e54c0e"
   },
   "author": "",
   "license": "MIT",
