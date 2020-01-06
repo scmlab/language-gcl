@@ -8,7 +8,7 @@
   },
   "repository": "https://github.com/scmlab/language-gcl.git",
   "dependencies": {
-    "tree-sitter-gcl": "^0.1.0"
+    "tree-sitter-gcl": "^0.1.1"
   },
   "author": "",
   "license": "MIT",

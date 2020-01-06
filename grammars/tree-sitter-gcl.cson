@@ -86,7 +86,15 @@ scopes:
     # '"&&"': 'keyword.operator.predicate'
     '"&&"': 'keyword.operator.predicate'
     '"||"': 'keyword.operator.predicate'
+    '"=>"': 'keyword.operator.predicate'
     '"~"': 'keyword.operator.predicate'
+
+    '"+"': 'keyword.operator.numeric'
+    '"-"': 'keyword.operator.numeric'
+    '"*"': 'keyword.operator.numeric'
+    '"/"': 'keyword.operator.numeric'
+    '"%"': 'keyword.operator.numeric'
+
 
     '"="': 'keyword.operator.predicate.markup.inserted'
     '"/="': 'keyword.operator.predicate.markup.inserted'
