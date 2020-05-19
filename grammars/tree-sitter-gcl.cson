@@ -50,6 +50,11 @@ scopes:
     '")"': 'punctuation.definition.end.bracket.round'
     '"{"': 'punctuation.definition.begin.bracket.curly'
     '"}"': 'punctuation.definition.end.bracket.curly'
+    '"<|"': 'punctuation.definition.begin.bracket.quantifier'
+    '"⟨"': 'punctuation.definition.begin.bracket.quantifier'
+    '"|>"': 'punctuation.definition.end.bracket.quantifier'
+    '"⟩"': 'punctuation.definition.end.bracket.quantifier'
+
     '"{!"': 'punctuation.definition.bold'
     '"!}"': 'punctuation.definition.bold'
 
@@ -85,9 +90,13 @@ scopes:
 
     # '"&&"': 'keyword.operator.predicate'
     '"&&"': 'keyword.operator.predicate'
+    '"∧"': 'keyword.operator.predicate'
     '"||"': 'keyword.operator.predicate'
+    '"∨"': 'keyword.operator.predicate'
     '"=>"': 'keyword.operator.predicate'
+    '"⇒"': 'keyword.operator.predicate'
     '"~"': 'keyword.operator.predicate'
+    '"¬"': 'keyword.operator.predicate'
 
     '"+"': 'keyword.operator.numeric'
     '"-"': 'keyword.operator.numeric'
@@ -98,7 +107,10 @@ scopes:
 
     '"="': 'keyword.operator.predicate.markup.inserted'
     '"/="': 'keyword.operator.predicate.markup.inserted'
+    '"≠"': 'keyword.operator.predicate.markup.inserted'
     '">="': 'keyword.operator.predicate.markup.inserted'
+    '"≥"': 'keyword.operator.predicate.markup.inserted'
     '"<="': 'keyword.operator.predicate.markup.inserted'
+    '"≤"': 'keyword.operator.predicate.markup.inserted'
     '">"': 'keyword.operator.predicate.markup.inserted'
     '"<"': 'keyword.operator.predicate.markup.inserted'

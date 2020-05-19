@@ -4,11 +4,12 @@
   "description": "Grammar for the language GCL",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "rm yarn.lock && yarn && apm rebuild"
   },
   "repository": "https://github.com/scmlab/language-gcl.git",
   "dependencies": {
-    "tree-sitter-gcl": "^0.1.1"
+    "tree-sitter-gcl": "^0.1.2"
   },
   "author": "",
   "license": "MIT",
