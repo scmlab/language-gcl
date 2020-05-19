@@ -44,7 +44,7 @@ scopes:
     '","': 'punctuation.definition.seperator'
 
 
-    '"?"': 'meta.delimiter.hole'
+    # '"?"': 'meta.delimiter.hole'
 
     '"("': 'punctuation.definition.begin.bracket.round'
     '")"': 'punctuation.definition.end.bracket.round'
@@ -75,6 +75,8 @@ scopes:
     # keywords
     'skip': 'keyword.control'
     'abort': 'keyword.control'
+    'hole': 'keyword.control'
+    '"?"': 'keyword.control'
 
     '"fi"': 'keyword.control'
     '"if"': 'keyword.control'
@@ -84,6 +86,7 @@ scopes:
 
     '"con"': 'storage.type.annotation'
     '"var"': 'storage.type.annotation'
+    '"let"': 'storage.type.annotation'
     '"bnd"': 'storage.modifier'
     '"array"': 'storage.type.annotation'
     '"of"': 'storage.type.annotation'
@@ -105,7 +108,7 @@ scopes:
     '"%"': 'keyword.operator.numeric'
 
 
-    '"="': 'keyword.operator.predicate.markup.inserted'
+    'eq': 'keyword.operator.predicate.markup.inserted'
     '"/="': 'keyword.operator.predicate.markup.inserted'
     '"≠"': 'keyword.operator.predicate.markup.inserted'
     '">="': 'keyword.operator.predicate.markup.inserted'
